@@ -62,7 +62,7 @@
 	"linter": {
 		"enabled": true,
 		"rules": { "recommended": false },
-		"includes": ["**", "!dist", "!src/components/ui"]
+		"includes": ["**", "!dist", "!src/components/ui", "!src/routeTree.gen.ts"]
 	},
 	"javascript": {
 		"formatter": {
@@ -355,7 +355,7 @@
 						"useExhaustiveDependencies": "warn",
 						"useHookAtTopLevel": "error"
 					},
-					"suspicious": { "noConsole": "error" }
+					"suspicious": { "noConsole": "warn" }
 				}
 			}
 		}
